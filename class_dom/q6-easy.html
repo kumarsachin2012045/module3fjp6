@@ -1,3 +1,4 @@
+<!-- Question 3 -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -50,18 +51,23 @@
     <div class="card" data-color="green"></div>
     <div class="card" data-color="blue"></div>
     <script>
-      // Q Write a script which fetches the data-color attribute of the card on double clicking on them and attaches the fetched class to that card.
-      // Also changes the data-color attribute to "used"
-      let allCards = document.querySelectorAll(".card");
-      for(let i=0;i<allCards.length;i++){
-        allCards[i].addEventListener('dblclick',function(e){
-          console.log(e);
-          let color = e.target.getAttribute("data-color");
-          e.target.setAttribute("data-color","used");
-          
-          e.target.classList.add(color);
-        })
-      }
+ // Q Write a script which fetches the data-color attribute of the card on double clicking on them and attaches the fetched class to that card.
+// Also changes the data-color attribute to "used"
+     let allcards=document.querySelectorAll(".card");
+     for(let i=0;i<allcards.length;i++)
+     {
+      allcards[i].addEventListener("click",function(e){
+        console.log(e);
+        let color=e.target.getAttribute("data-color");
+        //console.log(color);//jis par click kroge uska color milega
+        e.target.setAttribute("data-color","used");//ab data-color me used set ho gya
+        //classList me sari class hoti hai ye target me hai 
+        e.target.classList.add(color);
+      })
+     }
     </script>
+    <!-- Jab koi event hota hai to ek object milta hai function ko usme bahut sari 
+    property hai usme ek property target hai isme wo element hota jis par ye 
+    event hua hota hai jaise iss question me card tha target me -->
   </body>
 </html>
