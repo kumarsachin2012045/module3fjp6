@@ -56,13 +56,13 @@
      let allcards=document.querySelectorAll(".card");
      for(let i=0;i<allcards.length;i++)
      {
-      allcards[i].addEventListener("click",function(e){
+      allcards[i].addEventListener("dblclick",function(e){
         console.log(e);
         let color=e.target.getAttribute("data-color");
         //console.log(color);//jis par click kroge uska color milega
         e.target.setAttribute("data-color","used");//ab data-color me used set ho gya
-        //classList me sari class hoti hai ye target me hai 
-        e.target.classList.add(color);
+ //classList me sari class hoti hai ye target me hai (e me target aur target me classList)
+        e.target.classList.add(color);//jo class thi usme ek aur add kar lo
       })
      }
     </script>
