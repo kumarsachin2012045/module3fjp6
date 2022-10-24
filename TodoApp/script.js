@@ -3,9 +3,12 @@ let inputTag=document.querySelector("input");
 let ulTag=document.querySelector("ul");
 
 inputTag.addEventListener("keydown",function(e){
+    //console.log
 let key=e.key;//jo key press kroge wo store kiya
 if(key=="Enter"){//jab key press ho tab ye kam ho
 let value=inputTag.value;//isse jo input kiye inputbox me uski value value me store kar li
+if(value.length==0)
+  return;
 inputTag.value="";//store karne ke bad use empty kar diya
 //ab hmne jo value store kiya tha use page par(ul me) add karna hai
 
@@ -57,3 +60,6 @@ function handleRemoval(liTag){
 // }
 // })
 //itne se add hua jo enter kiye
+// handleRemoval(liTag);
+// function bna liya delete karne ke liye taki code shi dikhe aur isse bas
+//attach kr rhe h
