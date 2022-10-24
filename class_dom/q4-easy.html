@@ -1,3 +1,4 @@
+<!-- Question 5 -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,13 +20,18 @@
       <li>10</li>
     </ul>
     <script>
-      //insertBefore
-      let liTag = document.createElement("li");
-      liTag.innerText = '7';
-      let allLi = document.querySelectorAll("li");
-      let relevantLi = allLi[6];
-      let parent = document.querySelector("ul");
-      parent.insertBefore(liTag,relevantLi);
+      //create
+      //insertBefore(kya insert karna hai,kiske pahle karna h) -->ye ek propertiy hai net par dekh lena
+      //syntax
+      //parent.insertBefore("kya insert karna hai","kiske pahle karna h")
+
+      let liTag=document.createElement("li");
+      liTag.innerHTML="7";
+      //jiske pahle karna use sellect kro
+      let allLi=document.querySelectorAll("li");
+      let relevant=allLi[6];
+      let parent=document.querySelector("ul");
+      parent.insertBefore(liTag,relevant);
 
     </script>
   </body>

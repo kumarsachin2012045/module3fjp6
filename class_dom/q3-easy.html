@@ -1,3 +1,4 @@
+<!-- Question 6 -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,12 +11,13 @@
     <button>sayHello</button>
     <script>
       // Q- On clicking the button append hello to the page
-      let btn = document.querySelector("button");
+      let btn=document.querySelector("button");
       btn.addEventListener("click",function(){
-        let pTag = document.createElement("p");
-        pTag.innerText = "Hello";
-        let bodyTag = document.querySelector("body");
-        bodyTag.appendChild(pTag);
+       let pTag=document.createElement("p");
+       pTag.innerHTML="Hello";
+       let bodyTag=document.querySelector("body");
+       bodyTag.appendChild(pTag);  
+       //isme seekha kaise child add karte hai click karne par page par dikhega      
       })
     </script>
   </body>

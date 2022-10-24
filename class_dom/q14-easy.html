@@ -1,3 +1,4 @@
+<!-- Question 7 -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -29,20 +30,23 @@
     <script>
       // Q- Make remove all button work  and make individual delete btn work 
       //   Solution:
-      let removeAllBtn = document.querySelector("#all");
-      removeAllBtn.addEventListener("click",function(){
-        let ulTag = document.querySelector("ul");
-        ulTag.remove();
-      })
+     let removeAllbtn=document.querySelector("#all");
+     removeAllbtn.addEventListener("click",function(){
+      let ulTag=document.querySelector("ul");
+      ulTag.remove();
+      //yaha seekha ki click karne par kaise delete hota hai sbhi btn
+     })
 
-      let allBtns = document.querySelectorAll("ul button");
-      for(let i=0;i<allBtns.length;i++){
-        allBtns[i].addEventListener("click",function(e){
-          console.log(e);
-          e.target.parentElement.remove();
-        })
-      }
-
+     let allBtns=document.querySelectorAll("ul button");
+     
+    for(let i=0;i<allBtns.length;i++){
+      allBtns[i].addEventListener("click",function(){
+     let liTag=document.querySelector("ul li");
+     liTag.remove();
+     })
+    }
+     
+    
     </script>
   </body>
 </html>
