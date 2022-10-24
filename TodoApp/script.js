@@ -10,10 +10,19 @@ inputTag.value="";//store karne ke bad use empty kar diya
 //ab hmne jo value store kiya tha use page par(ul me) add karna hai
 
 let liTag=document.createElement("li");
-liTag.innerHTML=value;
+liTag.innerHTML=`<div>${value}</div>
+                  <div class="delete"><i class="fa-regular fa-trash-can"></i></div>`;
+
+handleRemoval(liTag);
 ulTag.appendChild(liTag);
 }
 })
+function handleRemoval(liTag){
+    let deleteDiv=liTag.querySelector(".delete");
+    deleteDiv.addEventListener("click",function(){
+        liTag.remove();
+    })
+}
 
 
 
