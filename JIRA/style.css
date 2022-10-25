@@ -39,3 +39,16 @@ body{
  /* aur upper se(y axis se) center me lane ke liye align-item use karna */
  /* ab charo div ka color alag-2 karna hai to ek class ya id aur de do charo div ko */
 }
+.pink{
+ background-color: pink;
+}
+.blue{
+    background-color: aquamarine;
+}
+.green{
+  background-color:greenyellow;  
+}
+.black{
+    background-color: rgb(56, 36, 36);
+}
+/* charo div ko color ho gya ab next div bnate h icon wala jisme btn h */
