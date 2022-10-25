@@ -48,6 +48,6 @@ addModal=!addModal;
 //     }
 //     addModal=!addModal;
 //     // har bar toggle karna padega true ho to false and false ho to true
-    
-
 // })
+//jab hm likh ke enter karte h to ticket sa ban ke aa jata hai
+//usme content ,color,id hai to ab ticket bnate hai
