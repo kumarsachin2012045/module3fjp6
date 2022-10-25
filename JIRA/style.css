@@ -71,7 +71,7 @@ width: 50vw;
 /* display: flex; */
 display: none;
 /* agr writing box chahte ho ki na dikhe to display none kar do nhi dikhega */
-/* jab + par click kre tab dikhe to ye javascript se karenge*/
+/* jab + par click kre tab dikhe to ye javascript se karenge(eventListner lga denge +par)*/
 margin-left: 20rem;
 margin-top: 7rem;
 }
