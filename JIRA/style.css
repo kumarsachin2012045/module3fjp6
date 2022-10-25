@@ -1,0 +1,30 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.toolbox-cont{
+    height: 5rem;
+    background-color: black;
+    /* display flex diya taki ek line me aa jaye jo toolbox-cont me h*/
+    display: flex;
+    /* y axis par move ke liye align-item use karte hai */
+    align-items:center;
+
+}
+.toolbox-priority{
+    height: 3rem;
+    background-color: deepskyblue;
+    width: 18rem;
+ /*dono ke beech thoda sa space chahiye justify se kam nhi bn raha to margin lga ke bnate h */
+ margin-left: 5rem;
+}
+.action-btn-cont{
+    height: 3rem;
+    width: 10rem;
+    background-color: rgb(91, 214, 124);
+     /*dono ke beech thoda sa space chahiye justify se kam nhi bn raha to margin lga ke bnate h */
+    margin-left: 5rem;
+}
