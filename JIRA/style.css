@@ -20,6 +20,9 @@ body{
     width: 18rem;
  /*dono ke beech thoda sa space chahiye justify se kam nhi bn raha to margin lga ke bnate h */
     margin-left: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .action-btn-cont{
     height: 3rem;
@@ -29,6 +32,9 @@ body{
     margin-left: 5rem;
 }.color{
     height: 2rem;
-    width: 2rem;
+    width: 3rem;
     background-color: red;
+ /* in charo div ko line me lane ke liye iske parent(toolbox-priority) ko display flex de do */
+ /* unke beech me space ke liye justify content bhi de dena */
+ /* aur upper se(y axis se) center me lane ke liye align-item use karna */
 }
