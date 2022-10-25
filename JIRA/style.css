@@ -16,7 +16,7 @@ body{
 }
 .toolbox-priority{
     height: 3rem;
-    background-color: deepskyblue;
+    background-color: rgb(91, 214, 124) ;
     width: 18rem;
  /*dono ke beech thoda sa space chahiye justify se kam nhi bn raha to margin lga ke bnate h */
     margin-left: 5rem;
@@ -52,3 +52,49 @@ body{
     background-color: rgb(56, 36, 36);
 }
 /* charo div ko color ho gya ab next div bnate h icon wala jisme btn h */
+.action-btn-cont{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.add-btn{
+    font-size:1.5rem;
+    
+}
+.remove-btn{
+    font-size:1.5rem ;
+}
+.modal-cont{
+background-color:lightgreen;
+height: 50vh;
+width: 50vw;
+display: flex;
+margin-left: 20rem;
+margin-top: 7rem;
+}
+.textarea-cont{
+outline: none;
+border: none;
+resize: none;
+background-color: burlywood;
+width: 75%;
+font-size:2rem;
+padding:1rem;
+}
+.priority-color-cont{
+ height: 100%;
+ width: 25%;
+ /* width parent ka 25% hai */
+display: flex;
+flex-direction: column;
+/*flex direction change karne par align-item and justify-content opposite kam karne lagte hai*/
+/* align-item x and justify-content y me */
+justify-content: space-around;
+align-items: center;
+
+}
+.priority-color{
+height: 2rem;
+width: 4rem;
+
+}
