@@ -68,7 +68,10 @@ body{
 background-color:lightgreen;
 height: 50vh;
 width: 50vw;
-display: flex;
+/* display: flex; */
+display: none;
+/* agr writing box chahte ho ki na dikhe to display none kar do nhi dikhega */
+/* jab + par click kre tab dikhe to ye javascript se karenge*/
 margin-left: 20rem;
 margin-top: 7rem;
 }
