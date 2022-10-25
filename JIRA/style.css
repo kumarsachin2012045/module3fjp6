@@ -27,4 +27,8 @@ body{
     background-color: rgb(91, 214, 124);
      /*dono ke beech thoda sa space chahiye justify se kam nhi bn raha to margin lga ke bnate h */
     margin-left: 5rem;
+}.color{
+    height: 2rem;
+    width: 2rem;
+    background-color: red;
 }
