@@ -31,10 +31,11 @@ body{
      /*dono ke beech thoda sa space chahiye justify se kam nhi bn raha to margin lga ke bnate h */
     margin-left: 5rem;
 }.color{
-    height: 2rem;
+    height: 1.5rem;
     width: 3rem;
     background-color: red;
  /* in charo div ko line me lane ke liye iske parent(toolbox-priority) ko display flex de do */
  /* unke beech me space ke liye justify content bhi de dena */
  /* aur upper se(y axis se) center me lane ke liye align-item use karna */
+ /* ab charo div ka color alag-2 karna hai to ek class ya id aur de do charo div ko */
 }
