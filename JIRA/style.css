@@ -19,7 +19,7 @@ body{
     background-color: deepskyblue;
     width: 18rem;
  /*dono ke beech thoda sa space chahiye justify se kam nhi bn raha to margin lga ke bnate h */
- margin-left: 5rem;
+    margin-left: 5rem;
 }
 .action-btn-cont{
     height: 3rem;
