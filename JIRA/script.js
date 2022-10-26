@@ -51,3 +51,8 @@ addModal=!addModal;
 // })
 //jab hm likh ke enter karte h to ticket sa ban ke aa jata hai
 //usme content ,color,id hai to ab ticket bnate hai
+// ye ban gya 
+// problem ye hai ki plus press karne par write box neeche aa rha hai 
+//iska position set karna padega to position absolute se karenge mdn par jake
+//demo dekh lena https://developer.mozilla.org/en-US/docs/Web/CSS/position
+//baki ticket hta do bas ek rkho phir styling karna h pop up wala click krne pr
