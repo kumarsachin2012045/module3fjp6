@@ -102,3 +102,37 @@ height: 2rem;
 width: 4rem;
 
 }
+.main-cont{
+    margin-top:2rem;
+    /* display: flex; ye dene se ek line me ho gye but jyada ticket hone se koi space
+    bhi nhi hai aur sare horizontal hai ham chahte ki jo extra bache wo neeche shift
+    ho jaye to iske liye flex wrap propertiy use karenge*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+/* abhi bhi row ke beech space nhi hai iske liye use karte hai gap nam ki property */
+/* margin top lgaoge to har row me lgana padega hme row nhi pta kita hai isliye gap
+ property use kiya */
+gap: 2rem;
+}
+.ticket-cont{
+background-color:yellow;
+height: 10rem;
+width: 15rem;
+
+
+}
+.ticket-color{
+background-color: cadetblue;
+height: 1rem;
+
+}
+.ticket-id{
+    background-color: goldenrod;
+    height: 1.5rem;
+}
+.task-area{
+/* height: 7.5rem;calculate na karna pade iske liye calsc use karte hai */
+height:calc(100%-1rem-1.5rem);
+padding: 5px;
+}
