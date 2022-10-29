@@ -87,7 +87,10 @@ iske acoording code likh do
 ye to ho gya 
 ab task h ki agr delete icon red h to jis ticket pr click kre wo delete ho jaye 
 to iske liye sabhi ticket par(ticketCont  par) event listner lga do 
-aur red hai nhi ye removeFlag bta rha h
+aur red hai nhi ye removeFlag bta rha h ye to hogya
+
+ab ticket ke top wale border par click kre to color chnage hona chahiye jaise
+toolbox me color hai uske according to ab event listner lgega ticket color par
 
 
 

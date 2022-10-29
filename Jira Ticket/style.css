@@ -4,16 +4,16 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color:#E1FFB1;
+    background-color:#E5F9BD;
 }
 .toolbox-cont{
-    background-color:#54BAB9;
+    background-color:#212121;
     height:5rem;
     display: flex;
     align-items: center;
 }
 .toolbox-priority-cont{
-    background-color:#7A86B6;
+    background-color:#83A95C;
     height: 3rem;
     width: 18rem;
     margin-left: 5rem;
@@ -22,7 +22,7 @@ body{
     justify-content: space-evenly;
 }
 .action-btn-cont{
-    background-color:lightseagreen;
+    background-color:#83A95C;
     height: 3rem;
     width: 10rem;
     margin-left: 5rem;
@@ -54,8 +54,7 @@ body{
     font-size: 1.5rem;
 }
 .modal-cont{
-    
-background-color: rgb(241, 241, 190);
+background-color: #ECECEC;
 height:50vh;
 width: 50vw;
 /* display: flex;jab js apply kiye to by defalut none set kiya ise */
@@ -72,7 +71,7 @@ border: none;
 resize: none;
 padding: 2rem;
 font-size: 2rem;
-background-color:khaki;
+background-color:#D6E0F0;
 height: 100%;
 width: 77%;
 }

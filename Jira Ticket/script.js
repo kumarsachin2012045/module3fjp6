@@ -4,9 +4,11 @@ let taskareaCont=document.querySelector(".textarea-cont");
 let mainCont=document.querySelector(".main-cont");
 let allPriorityColor=document.querySelectorAll(".priority-color");
 let addModal=true;
-let modalPriorityColor="black";
+// let modalPriorityColor="black";
 let removeBtn=document.querySelector(".remove-btn");
-let removeFlag=true;
+let removeFlag=false;
+let colors=["lightpink","blue","green","black"];
+let modalPriorityColor=colors[colors.length-1];
 addBtn.addEventListener("click",function(){
 if(addModal){
    //show agr true h
@@ -59,11 +61,29 @@ function createTicket(ticketColor,task){
 //ticket ban gya javascript se ab ise append karna hai iske parent me 
 //to pahle use sellect kro sellect wala kam upar kiye hai
 mainCont.appendChild(ticketCont);
+
+//handling delete
 ticketCont.addEventListener("click",function(){
     if(removeFlag)
-    {
         ticketCont.remove();
+})
+//handle ticket ke top border ka color dsa par based ye code 
+let ticketColorBnand=ticketCont.querySelector(".ticket-color");
+ticketColorBnand.addEventListener("click",function(){
+    let currentTicketColor=ticketColorBnand.classList[1];
+    let currentTicketColorIndx=-1;
+    for(let i=0;i<colors.length;i++){
+        if(currentTicketColor==colors[i]){
+            currentTicketColorIndx=i;
+            break;
+        }
     }
+    let nextColorIdx=(currentTicketColorIndx+1)%colors.length;
+    //lecture 12 may
+    //isliye kiya taki color loop(cyclic form me ho 0,1,2,3,0,1,2,3,0,...) me mile
+    let nextColor=colors[nextColorIdx];
+    ticketColorBnand.classList.remove(currentTicketColor);
+    ticketColorBnand.classList.add(nextColor);
 })
 }
 removeBtn.addEventListener("click",function(){
