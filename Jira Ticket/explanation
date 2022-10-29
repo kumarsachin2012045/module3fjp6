@@ -57,5 +57,8 @@ task 2 hai ticket bnana
  net se dekh lena position-css mdn isme 3 property hai
  position : static; position : relative; position : absolute;ye wala lagane se 
  set ho jayega modal container first page par jo top and left ke according aa jayega
+ ye problem solve ho jane ke bad ab js lagate hai modal-contner par
+ 
+
 
 
