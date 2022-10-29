@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.toolbox-cont{
+    background-color:lightgreen;
+    height:5rem;
+    display: flex;
+    align-items: center;
+}
+.toolbox-priority-cont{
+    background-color:lightseagreen;
+    height: 3rem;
+    width: 18rem;
+    margin-left: 5rem;
+}
+.action-btn-cont{
+    background-color:lightseagreen;
+    height: 3rem;
+    width: 10rem;
+    margin-left: 5rem;
+}
