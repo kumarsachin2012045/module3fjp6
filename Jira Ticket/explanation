@@ -31,3 +31,14 @@ else{
 addModal=!addModal;
 //above code se seekha toggale kaise karna hai
 })
+
+task 2 hai ticket bnana
+  <div class="ticket-cont">
+        <div class="ticket-color green ">black</div>
+        green class likha taki green ki css apply ho jaye jo phle likha tha
+        <div class="ticket-id">#sfhsadfkh</div>
+        <div class="task-area">some task</div>
+    </div>
+ ye tab tak show nhi karega jab tak styling (Css) nhi kroge
+ aur jo bhi height and width dena wo parent ke according dena
+
