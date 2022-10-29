@@ -1,8 +1,10 @@
 let addBtn=document.querySelector(".add-btn");
 let modalCont=document.querySelector(".modal-cont");
 let taskareaCont=document.querySelector(".textarea-cont");
-let mainCont=document.querySelector(".main-cont")
+let mainCont=document.querySelector(".main-cont");
+let allPriorityColor=document.querySelectorAll(".priority-color");
 let addModal=true;
+let modalPriorityColor="black";
 addBtn.addEventListener("click",function(){
 if(addModal){
    //show agr true h
@@ -15,6 +17,7 @@ else{
 addModal=!addModal;
 //above code se seekha toggale kaise karna hai
 })
+
 modalCont.addEventListener("keydown",function(e){
     let key=e.key;
     // console.log(key);

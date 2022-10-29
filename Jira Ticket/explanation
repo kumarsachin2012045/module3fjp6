@@ -61,6 +61,9 @@ task 2 hai ticket bnana
  append kar diya h main-cont me
 
  ab color and id change karne h ticket ka
+jab bhi hme particular property asign karna hota h to ek class bna dete h
+aur css me property likh dete h to ye kam hamne color ke liye kiya active name
+ka class diya by default black priority-color wale class ko
 
 
 
