@@ -79,6 +79,13 @@ ticketCont.innerHTML=`<div class="ticket-color ${ticketColor}"></div>
 <div class="ticket-id">#423c</div>
  <div class="task-area">${task}</div>`
 
+ab task hai delete btn ko click kre to red and dubara kre to black ho jaye to
+phle sellect karenge phir eventListner lga denge click par
+phir ise toggle kra denge jaise modal me kiya tha yha color par karna hai
+to iske liye lete hai removeFlag jaise ise starting kuch bhi asign kar do true ya false
+iske acoording code likh do
+
+
 
 
 

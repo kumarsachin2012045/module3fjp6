@@ -5,6 +5,8 @@ let mainCont=document.querySelector(".main-cont");
 let allPriorityColor=document.querySelectorAll(".priority-color");
 let addModal=true;
 let modalPriorityColor="black";
+let removeBtn=document.querySelector(".remove-btn");
+let removeFlag="false";
 addBtn.addEventListener("click",function(){
 if(addModal){
    //show agr true h
@@ -57,5 +59,13 @@ function createTicket(ticketColor,task){
 //ticket ban gya javascript se ab ise append karna hai iske parent me 
 //to pahle use sellect kro sellect wala kam upar kiye hai
 mainCont.appendChild(ticketCont);
-
 }
+removeBtn.addEventListener("click",function(){
+    if(removeFlag){
+        removeBtn.style.color="red";
+    }
+    else{
+        removeBtn.style.color="black";
+    }
+    removeFlag=!removeFlag;//ise hta ke dekh lena kaisa hota h
+})
