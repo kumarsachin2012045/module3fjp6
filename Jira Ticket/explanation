@@ -1,0 +1,12 @@
+dispaly flex parent par applay karna hota hai
+pahle page ko dekh kar decide kro div kitne lagenge
+phir uske according class asign kar do 
+phir ek-2 class ko sellect kro aur css apply kro
+agar height width and background nhi doge tab tak dikhega nhi 
+html css se page ka format ban gya ab javascript lgate hai
+jab + par click ho to modal (writing box ana chahiye)aur dubara click kare to
+chle jana chahiye isko karte hai display flex ki help se
+jab  display:none; likhte hai to modal container chla jata hai 
+jab display:flex; likhte hai chla ata hai click karne par 
+yhi addEventlistner me use karenge logic
+
