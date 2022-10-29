@@ -6,7 +6,7 @@ let allPriorityColor=document.querySelectorAll(".priority-color");
 let addModal=true;
 let modalPriorityColor="black";
 let removeBtn=document.querySelector(".remove-btn");
-let removeFlag="false";
+let removeFlag=true;
 addBtn.addEventListener("click",function(){
 if(addModal){
    //show agr true h
@@ -59,13 +59,22 @@ function createTicket(ticketColor,task){
 //ticket ban gya javascript se ab ise append karna hai iske parent me 
 //to pahle use sellect kro sellect wala kam upar kiye hai
 mainCont.appendChild(ticketCont);
+ticketCont.addEventListener("click",function(){
+    if(removeFlag)
+    {
+        ticketCont.remove();
+    }
+})
 }
 removeBtn.addEventListener("click",function(){
     if(removeFlag){
-        removeBtn.style.color="red";
-    }
-    else{
         removeBtn.style.color="black";
     }
+    else{
+        removeBtn.style.color="red";
+    }
     removeFlag=!removeFlag;//ise hta ke dekh lena kaisa hota h
+    //jab delete icon red ho to jis ticket par click kre wo delete hona chahiye
+    //iske liye ticket container me event listner lgna padega 
+    //red hone par delete karna hai ye remove flag btayega kab red hai
 })

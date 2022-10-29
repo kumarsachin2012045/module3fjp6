@@ -84,6 +84,10 @@ phle sellect karenge phir eventListner lga denge click par
 phir ise toggle kra denge jaise modal me kiya tha yha color par karna hai
 to iske liye lete hai removeFlag jaise ise starting kuch bhi asign kar do true ya false
 iske acoording code likh do
+ye to ho gya 
+ab task h ki agr delete icon red h to jis ticket pr click kre wo delete ho jaye 
+to iske liye sabhi ticket par(ticketCont  par) event listner lga do 
+aur red hai nhi ye removeFlag bta rha h
 
 
 
