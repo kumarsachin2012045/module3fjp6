@@ -8,5 +8,5 @@ jab + par click ho to modal (writing box ana chahiye)aur dubara click kare to
 chle jana chahiye isko karte hai display flex ki help se
 jab  display:none; likhte hai to modal container chla jata hai 
 jab display:flex; likhte hai chla ata hai click karne par 
-yhi addEventlistner me use karenge logic
-
+yhi addEventlistner me use karenge logic ab js me implemet hoga
+css me pahle none kar do to + pr click kroge to dikh jayega
