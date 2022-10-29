@@ -53,13 +53,17 @@ body{
     font-size: 1.5rem;
 }
 .modal-cont{
+    
 background-color: rgb(241, 241, 190);
 height:50vh;
 width: 50vw;
 /* display: flex;jab js apply kiye to by defalut none set kiya ise */
 display: none;
-margin-left: 20rem;
-margin-top: 7rem;
+position: absolute;
+top: 25vh;
+left: 25vw;
+/* margin-left: 20rem;
+margin-top: 7rem; */
 }
 .textarea-cont{
 outline: none;
@@ -83,11 +87,19 @@ align-items: center;
 height: 3rem;
 width: 5rem;
 }
+.main-cont{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+}
 .ticket-cont{
     background-color: lightyellow;
     height: 10rem;
     width:15rem;
-    margin-top: 2rem;
+    
 }
 .ticket-color{
    height: 1rem;

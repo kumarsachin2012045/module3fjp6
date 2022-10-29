@@ -33,12 +33,29 @@ addModal=!addModal;
 })
 
 task 2 hai ticket bnana
-  <div class="ticket-cont">
+  <!-- <div class="ticket-cont">
         <div class="ticket-color green ">black</div>
         green class likha taki green ki css apply ho jaye jo phle likha tha
         <div class="ticket-id">#sfhsadfkh</div>
         <div class="task-area">some task</div>
-    </div>
+    </div> -->
  ye tab tak show nhi karega jab tak styling (Css) nhi kroge
  aur jo bhi height and width dena wo parent ke according dena
+
+ jab isi ticket ko multiple time paste kiya to ye ek hi line me 
+ aa rhi thi phir hme display flex properties lgayi to ye 
+ horizontal me ek hi line me aa gyi aur justify content space-around 
+ karne par gap nhi dikhh rha tha kyo ki more than 10 ticket the ek line me 
+ to ek next line me lane ke liye flex:wrap; property use kiya
+ ab next line to aa gya but row ek beech me gap nhi tha
+ margin top ke bjaye hmne gap propety use ki ye row ke beech me gap lata hai
+ jaise jaise row aayega apne ap gap bnta jayega
+
+ ek problem ayi jo writing box tha wo click karne par ticket
+ ke neeche aa rha tha use first page par ana chahiye tha
+ iske liye ham use karenge ek property postion:absolute;
+ net se dekh lena position-css mdn isme 3 property hai
+ position : static; position : relative; position : absolute;ye wala lagane se 
+ set ho jayega modal container first page par jo top and left ke according aa jayega
+
 
