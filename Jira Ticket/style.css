@@ -83,3 +83,22 @@ align-items: center;
 height: 3rem;
 width: 5rem;
 }
+.ticket-cont{
+    background-color: lightyellow;
+    height: 10rem;
+    width:15rem;
+    margin-top: 2rem;
+}
+.ticket-color{
+   height: 1rem;
+}
+.ticket-id{
+  background-color: burlywood;
+  height: 1.5rem;
+}
+.task-area{
+ height:calc(100%-1rem - 1.5rem);
+ /* ye height ese likhne se calculate nhi larna padta */
+ padding:5px;
+ font-size:1.25rem;
+}
