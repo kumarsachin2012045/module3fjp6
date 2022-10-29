@@ -16,4 +16,5 @@ else{
     modal.style.display="none";
 }
 addModal=!addModal;
+//above code se seekha toggale kaise karna hai
 })
