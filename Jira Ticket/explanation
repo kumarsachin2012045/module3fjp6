@@ -64,6 +64,20 @@ task 2 hai ticket bnana
 jab bhi hme particular property asign karna hota h to ek class bna dete h
 aur css me property likh dete h to ye kam hamne color ke liye kiya active name
 ka class diya by default black priority-color wale class ko
+ye kam sabhi par karne ke liye charo color ko sellect kiya aur (class priority-color se)
+phir ham chahte ki jis pr click ho kewal usi pr dikhaye
+to jo by default set tha use htaya loop lga ke kyo ki hme nhi pta kis div par 
+sellect h border phir uske bad jis pr click hua usi me active class add kr diya
+uske bad ab ticket top ke color change karna hai jo writing box me sellect kiye hoga
+iske liye hmne let modalPriorityColor="black"; ye by defalut liya fir jo active h waha 
+se 0th index wale ko sellect kiya kyoki ye color wala index hai
+//blue priority-color ye class h iske 0 index par color h
+//jo color active h writing container par wo nikala 
+//ise pass karna ticket ke pass taki ticket ke top par color lga paye
+ab ticket ke top wale ka color set hua
+ticketCont.innerHTML=`<div class="ticket-color ${ticketColor}"></div>
+<div class="ticket-id">#423c</div>
+ <div class="task-area">${task}</div>`
 
 
 
