@@ -57,11 +57,24 @@ function createTicket(ticketColor,task){
     ticketCont.setAttribute("class","ticket-cont");
     ticketCont.innerHTML=`<div class="ticket-color ${ticketColor}"></div>
                            <div class="ticket-id">#423c</div>
-                            <div class="task-area">${task}</div>`
+                            <div class="task-area">${task}</div>
+                            <div class="lock-unlock"><i class="fa-solid fa-lock"></i></div>`
+
+
 //ticket ban gya javascript se ab ise append karna hai iske parent me 
 //to pahle use sellect kro sellect wala kam upar kiye hai
 mainCont.appendChild(ticketCont);
-
+//lock-unlock handle
+let lockUnlockBtn=ticketCont.querySelector(".lock-unlock i");//icon select kiya
+lockUnlockBtn.addEventListener("click",function(){
+   if(lockUnlockBtn.classList.contains("fa-lock")){
+    lockUnlockBtn.classList.remove("fa-lock");
+    lockUnlockBtn.classList.add("fa-unlock");
+   }else{
+    lockUnlockBtn.classList.remove("fa-unlock");
+    lockUnlockBtn.classList.add("fa-lock");
+   }
+})
 //handling delete
 ticketCont.addEventListener("click",function(){
     if(removeFlag)
