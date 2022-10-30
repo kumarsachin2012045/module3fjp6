@@ -1,3 +1,4 @@
+var uid = new ShortUniqueId();
 let addBtn=document.querySelector(".add-btn");
 let modalCont=document.querySelector(".modal-cont");
 let taskareaCont=document.querySelector(".textarea-cont");
@@ -56,7 +57,7 @@ function createTicket(ticketColor,task){
     let ticketCont=document.createElement("div");
     ticketCont.setAttribute("class","ticket-cont");
     ticketCont.innerHTML=`<div class="ticket-color ${ticketColor}"></div>
-                           <div class="ticket-id">#423c</div>
+                           <div class="ticket-id">#${uid()}</div>
                             <div class="task-area">${task}</div>
                             <div class="lock-unlock"><i class="fa-solid fa-lock"></i></div>`
 

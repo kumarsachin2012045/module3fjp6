@@ -103,6 +103,25 @@ me likhna ho to div me contenteditable attribute set karte h div me
  par set karna h
  ise set kar liya 
  ab ticket me ID lgana hai google karke dekh lo browser me id kaise dete hai
+ search short unique id for js 
+ ye kaise use karna hai ye likha hai
+ Use in browser
+<!-- Add source (minified 4.6kB) -->
+<script src="https://cdn.jsdelivr.net/npm/short-unique-id@latest/dist/short-unique-id.min.js"></script>
+
+<!-- Usage -->
+<script>
+  // Instantiate
+  var uid = new ShortUniqueId();
+
+  // Random UUID
+  document.write(uid());
+  jab random id ki need ho tab uid() call kar lo
+
+  // Sequential UUID
+  document.write(uid.seq());
+</script>
+
 
 
 

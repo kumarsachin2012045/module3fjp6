@@ -109,7 +109,10 @@ width: 5rem;
    height: 1rem;
 }
 .ticket-id{
-  background-color: burlywood;
+  background-color:#a4c980;
+  color: red;
+  padding-top:.25rem;
+  padding-left:.25rem;
   height: 1.5rem;
 }
 .task-area{
