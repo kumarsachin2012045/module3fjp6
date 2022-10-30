@@ -66,13 +66,16 @@ function createTicket(ticketColor,task){
 mainCont.appendChild(ticketCont);
 //lock-unlock handle
 let lockUnlockBtn=ticketCont.querySelector(".lock-unlock i");//icon select kiya
+let ticketTaskarea=ticketCont.querySelector(".task-area");
 lockUnlockBtn.addEventListener("click",function(){
    if(lockUnlockBtn.classList.contains("fa-lock")){
     lockUnlockBtn.classList.remove("fa-lock");
     lockUnlockBtn.classList.add("fa-unlock");
+    ticketTaskarea.setAttribute("contenteditable","true");
    }else{
     lockUnlockBtn.classList.remove("fa-unlock");
     lockUnlockBtn.classList.add("fa-lock");
+    ticketTaskarea.setAttribute("contenteditable","false");
    }
 })
 //handling delete

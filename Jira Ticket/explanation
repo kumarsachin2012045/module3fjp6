@@ -99,7 +99,10 @@ to hmne jo icon laya usme lock and unlock class hona chahiye
 phir click par unlock class set kiya again click par lock class set kiya
 ek task aur jab unclock ho to likh paye iske liye to jab hme kisi div
 me likhna ho to div me contenteditable attribute set karte h div me
- <div contenteditable="true">I'm Editable. Edit me!</div>
+ <div contenteditable="true">I'm Editable. Edit me!</div> ye kam unlock btn click
+ par set karna h
+ ise set kar liya 
+ ab ticket me ID lgana hai google karke dekh lo browser me id kaise dete hai
 
 
 

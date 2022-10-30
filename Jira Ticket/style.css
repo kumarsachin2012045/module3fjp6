@@ -113,13 +113,18 @@ width: 5rem;
   height: 1.5rem;
 }
 .task-area{
- height:calc(100%-1rem - 1.5rem);
- /* ye height ese likhne se calculate nhi larna padta */
+ height:5.5rem;
+ /* height jo likha tha wo work nhi kr raha tha is liye hta diya*/
  padding:5px;
  font-size:1.25rem;
+ overflow: auto;
+ outline: none;
+ word-break: break-all;
+ /* iska kam width se jyada bda word hota hai to use next line me le ata hai */
+ /* ye hta and lga ke dekh lena lamba likhne par kya fark ata h */
+  
 }
 .lock-unlock{
     font-size: 1.5rem;
-    margin-top: 3.5rem;
     margin-left: 13rem;
 }
