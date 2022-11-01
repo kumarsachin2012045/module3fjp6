@@ -121,6 +121,7 @@ me likhna ho to div me contenteditable attribute set karte h div me
   // Sequential UUID
   document.write(uid.seq());
 </script>
+ese use karte h API
 
 
 

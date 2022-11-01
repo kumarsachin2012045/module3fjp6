@@ -1,8 +1,9 @@
-var uid = new ShortUniqueId();
+
 let addBtn=document.querySelector(".add-btn");
 let modalCont=document.querySelector(".modal-cont");
 let taskareaCont=document.querySelector(".textarea-cont");
 let mainCont=document.querySelector(".main-cont");
+let toolBoxColors=document.querySelectorAll(".color");
 let allPriorityColor=document.querySelectorAll(".priority-color");
 let addModal=true;
 // let modalPriorityColor="black";
@@ -10,6 +11,48 @@ let removeBtn=document.querySelector(".remove-btn");
 let removeFlag=false;
 let colors=["lightpink","blue","green","black"];
 let modalPriorityColor=colors[colors.length-1];
+var uid = new ShortUniqueId();
+let ticketArr=[];//jab ticket bnega tbhi fill hoga
+//createTicket("black","Hello","uidfs");
+
+for(let i=0;i<toolBoxColors.length;i++){
+    toolBoxColors[i].addEventListener("click",function(){
+        let currentColor=toolBoxColors[i].classList[1];
+        let filteredArr=[];
+        for(let i=0;i<ticketArr.length;i++){
+            if(ticketArr[i].color==currentColor){
+                filteredArr.push(ticketArr[i]);
+            }
+        }
+        console.log(filteredArr);
+        let allTickets=document.querySelectorAll(".ticket-cont");
+        for(let j=0;j<allTickets.length;j++)
+        {
+            allTickets[j].remove();
+        }
+        for(let i=0;i<filteredArr.length;i++){
+          let ticket=filteredArr[i];
+          let color=ticket.color;
+          let task=ticket.task;
+          let id=ticket.id;
+          createTicket(color,task,id);
+        }
+    })
+
+toolBoxColors[i].addEventListener("dblclick",function(){
+    let allTickets=document.querySelectorAll(".ticket-cont");
+    for(let j=0;j<allTickets.length;j++){
+            allTickets[j].remove();
+        }
+         for(let i=0;i<ticketArr.length;i++){
+            let ticket=ticketArr[i];
+            let color=ticket.color;
+            let task=ticket.task;
+            let id=ticket.id;
+            createTicket(color,task,id);
+        }
+})
+}
 addBtn.addEventListener("click",function(){
 if(addModal){
    //show agr true h
@@ -46,7 +89,14 @@ modalCont.addEventListener("keydown",function(e){
     addModal=!addModal;   
    }
 })
-function createTicket(ticketColor,task){
+function createTicket(ticketColor,task,ticketId){
+    let id;
+    if(ticketId==undefined)
+    {
+        id=uid();
+    }else{
+        id=ticketId;
+    }
     // <div class="ticket-cont">
             // <div class="ticket-color green">black</div>
             // <div class="ticket-id">#423c</div>
@@ -57,7 +107,7 @@ function createTicket(ticketColor,task){
     let ticketCont=document.createElement("div");
     ticketCont.setAttribute("class","ticket-cont");
     ticketCont.innerHTML=`<div class="ticket-color ${ticketColor}"></div>
-                           <div class="ticket-id">#${uid()}</div>
+                           <div class="ticket-id">#${id}</div>
                             <div class="task-area">${task}</div>
                             <div class="lock-unlock"><i class="fa-solid fa-lock"></i></div>`
 
@@ -102,6 +152,10 @@ ticketColorBnand.addEventListener("click",function(){
     ticketColorBnand.classList.remove(currentTicketColor);
     ticketColorBnand.classList.add(nextColor);
 })
+if(ticketId==undefined){
+ticketArr.push({"color":ticketColor,"task":task,"id":id})
+console.log(ticketArr);
+}
 }
 removeBtn.addEventListener("click",function(){
     if(removeFlag){
